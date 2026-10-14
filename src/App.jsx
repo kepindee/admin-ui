@@ -33,7 +33,7 @@ function App() {
               </label>
               <input
                 type="password"
-                className="py-3 pl text-sm rounded-md w-full bg-special-mainBg border border-gray-03 text-gray-01 focus:border-black focus:outline-none focus:ring-0"
+                className="py-3 pl-2 pl text-sm rounded-md w-full bg-special-mainBg border border-gray-03 text-gray-01 focus:border-black focus:outline-none focus:ring-0"
                 placeholder="************"
                 name="password"
                 id="password"
