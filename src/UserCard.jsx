@@ -1,8 +1,10 @@
 import { useState } from 'react';
 
 function UserCard(props) {
-  const { name, email, street, city } = props;
+  const { name, email, street, city, ...rest } = props;
   const [clicked, setClicked] = useState(false);
+
+  console.log(Object.entries(rest)); // Menampilkan properti tambahan yang diterima oleh komponen
 
   // Fungsi handler
   function handleClick() {
@@ -18,6 +20,12 @@ function UserCard(props) {
       <p className="text-gray-600">
         <span className="font-medium">Address:</span> {street}, {city}
       </p>
+        {/* Menampilkan data tambahan dari rest */}
+      {Object.entries(rest).map(([key, value]) => (
+        <p key={key} className="text-gray-600">
+          <span className="font-medium capitalize">{key}:</span> {value}
+        </p>
+      ))}
       <button
         type="button"
         onClick={() => handleClick(true)}
