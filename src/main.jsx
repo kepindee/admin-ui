@@ -1,10 +1,19 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './App.css'
-import Exercise from './Exercise.jsx'
+import "./index.css";
+import AtomButton from "./latihan/atoms/AtomButton.jsx";
+import AtomInput from "./latihan/atoms/AtomInput.jsx";
+import AtomLabel from "./latihan/atoms/AtomLabel.jsx";
+import AtomCard from "./latihan/atoms/AtomCard.jsx";
+import MoleculeFormField from './latihan/molecules/MoleculeFormField.jsx';
+import OrganismLoginPanel from "./latihan/organisms/OrganismLoginPanel.jsx";
+import TemplateCenter from './latihan/templates/TemplateCenter.jsx';
+import PageLogin from './latihan/pages/PageLogin.jsx';
+import PageRegister from './latihan/pages/PageRegister.jsx';
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Exercise />
-  </StrictMode>
+   <PageRegister />
+  </StrictMode>,
 );
