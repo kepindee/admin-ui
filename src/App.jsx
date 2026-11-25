@@ -1,7 +1,7 @@
 import "./App.css";
-import SignInPage from "./latihan/pages/signIn";
-import SignUpPage from "./latihan/pages/signUp";
-import ErrorPage from "./latihan/pages/error";
+import SignInPage from "./pages/signIn";
+import SignUpPage from "./pages/signUp";
+import ErrorPage from "./pages/error";
 import { createBrowserRouter, Link, RouterProvider } from "react-router-dom";
 
 function App() {
